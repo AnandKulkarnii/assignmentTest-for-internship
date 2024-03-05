@@ -1,7 +1,7 @@
-//width: 1024px height: 155px top: 64px left: 284px
+
 import tickImage from '../assets/tick.png';
 import ibuttonImage from '../assets/ibutton.png';
-import dropdown from '../assets/dropdown.png';
+
 function Title() {
     return (
         <div className="flex flex-col mx-auto justify-center w-[1024px] mt-10">
@@ -19,8 +19,9 @@ function Title() {
                     </div>
                 </div>
                 <div className='flex gap-1'>
-                    <h3 className="text-[#4B5665] font-normal text-sm">Top Relevant</h3>
-                    <img className="w-[20px] h-[20px]" src={dropdown} alt="" />
+                    <select className="bg-[#FFFFFF] text-[#4B5665] font-normal text-sm">
+                        <option className="text-sm">Top Relevant</option>
+                    </select>
                 </div>
             </div>
             <hr className="my-4 border-t-2 border-[#E1E4E6]"></hr>
